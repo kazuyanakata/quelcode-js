@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>現在の天気</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="mainTitle">現在の天気</h1>
+  </header>
+
+  <main>
+    <div class="select">
+      <label for="city" class="selectTitle">都市を選択して下さい</label>
+      <select name="city" id="city" class="selectList">
+        <option value="2643743">ロンドン</option>
+        <option value="1850147">東京</option>
+        <option value="2988507">パリ</option>
+        <option value="5128581">ニューヨーク</option>
+        <option value="1643084">インドネシア</option>
+      </select>
+    </div>
+    <div id="result" class="result"></div>
+  </main>
+
+  <script src="js-weather.js"></script>
+</body>
+
+</html>
