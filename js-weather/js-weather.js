@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
       result.textContent = 'エラーが発生しました。';
     }, false);
 
-    xhr.open('GET', `http://api.openweathermap.org/data/2.5/weather?lang=ja&units=metric&appid=4b5774e9f3d2a07b84f0f2f88e486224&id=${encodeURIComponent(value)}`, true);
+    xhr.open('GET', `https://api.openweathermap.org/data/2.5/weather?lang=ja&units=metric&appid=4b5774e9f3d2a07b84f0f2f88e486224&id=${encodeURIComponent(value)}`, true);
     xhr.send(null);
   }
   setWeather(defaultCityId);
